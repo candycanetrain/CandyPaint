@@ -11,7 +11,9 @@ With Candy Paint, users will be able to:
 
 - [ ] Paint on a canvas and clear a canvas (undo/redo/save options will be bonus features)
 - [ ] Choose a brush from the preset options
+- [ ] Add options for changing the size and opacity of the brushes
 - [ ] Toggle between the different brush options available
+
 
 In addition, this project will include:
 
@@ -28,14 +30,14 @@ This app will consist of a single screen with a blank canvas, brush options, and
 This project will be implemented with the following technologies:
 
 - Vanilla JavaScript for overall structure (Jquery??)
-- Possibly p5.js for animations?
+- Possibly p5.js for animations? easel.js?
 - Webpack to bundle and serve up the various scripts.
 
 In addition to the webpack entry file, there will be three scripts involved in this project:
 
 `canvas.js`: this script will handle the logic for creating and updating the necessary `p5.js` elements and rendering them to the DOM.
 
-`actions.js`: this script will handle the logic behind the scenes.  An action object will hold a `type` (mouseDown or mouseUp). 
+`actions.js`: this script will handle the logic behind the scenes.  An action object will hold a `type` (mouseDown or mouseUp).
 
 `brush.js`: this lightweight script will house the constructor and update functions for the `Brush` objects.  Each `brush` will contain a `type` (mouseDown or mouseUp).
 
@@ -70,6 +72,6 @@ In addition to the webpack entry file, there will be three scripts involved in t
 Some anticipated updates are:
 
 - [ ] An About modal describing what the available customization options are
-- [ ] Add options for changing the size and opacity of the brushes
+- [ ] Add mouseDown feature
 - [ ] Add redo, undo, and save options
 - [ ] Give user ability to upload a brush
