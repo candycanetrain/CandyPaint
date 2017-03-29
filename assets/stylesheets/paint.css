@@ -1,0 +1,9 @@
+#clear-canvas
+{
+    display: block;
+    border: 5px solid #FFF;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+}
