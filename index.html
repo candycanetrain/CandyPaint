@@ -22,15 +22,21 @@
     <title>Test</title>
   </head>
   <body>
+    <label>Choose a Brush:
+      <select id="brushTool" onChange="setBrush" name="">
+        <option value=""><img src="" alt=""></option>
+      </select>
 
-    <img id="frogjpeg" draggable="true" ondragstart="drag(event)" src="./assets/images/cartoon_frog.jpeg" alt="">
+    </label>
+    <img id="frogjpeg" draggable="true" ondragstart="drag(event)" src="./assets/images/toad.png" "alt="">
+    <img id="mario-fireball" draggable="true" ondragstart="drag(event)" src="./assets/images/mario-fireball.png" "alt="">
 
-    <button type="button" name="button">Clear</button>
+    <button id="clear-canvas" type="button" name="button">Clear</button>
     <button type="button" name="button">Undo</button>
     <button type="button" name="button">Redo</button>
     <div class="line horizontal" style="top: 284px;"></div>
     <div class="line vertical" style="top: 260px; left: 323px;"></div>
-    <canvas ondrop="drop(event)" ondragover="allowDrop(even)id="canvas" width="500" height="300" style="border:1px solid #000000">Your browser does not support the HTML5 "canvas" tag.</canvas>
+    <canvas ondrop="drop(event)" ondragover="allowDrop(even)id="canvas" width="700" height="500" style="border:1px solid #000000">Your browser does not support the HTML5 "canvas" tag.</canvas>
 
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
