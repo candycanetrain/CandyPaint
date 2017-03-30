@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.slider-input {
+.slider-range {
   -webkit-appearance: none;
   /*width: calc(100% - (73px));*/
   height: 10px;
@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.slider-input::-webkit-slider-thumb {
+.slider-range::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
   width: 18px;
@@ -27,7 +27,7 @@
   transition: background .15s ease-in-out;
 }
 
-.slider-input::-webkit-slider-thumb:hover {
+.slider-range::-webkit-slider-thumb:hover {
   background: #1abc9c;
 }
 /*#clear-canvas

@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-      // function allowDrop(ev) {
-      //   ev.preventDefault();
-      // }
-      //
-      // function drag(ev) {
-      //   ev.dataTransfer.setData("text", ev.target.id);
-      // }
-      //
-      // function drop(ev) {
-      //   ev.preventDefault();
-      //   var data = ev.dataTransfer.getData("text");
-      //   ev.target.appendChild(document.getElementById(data));
-      // }
-    </script>
     <script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
     <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -23,7 +8,7 @@
     <script src="./lib/jquery.js"></script>
 
     <meta charset="utf-8">
-    <title>Test</title>
+    <title>CandyPaint</title>
   </head>
   <body>
 
@@ -43,27 +28,24 @@
 
     <div class="slider">
       <label>Size
-        <input id="range" type="range" max="400" min="0" name=""/>
-        <input type="text" name="" id="value" value=""/>
+        <input class="slider-range" id="size" type="range" value="100" min="0" max="400">
+        <span class="slider-value"></span>
+      </label>
+    </div>
+
+    <div class="slider">
+      <label>Opacity
+        <input class="slider-range" id="opacity" type="range" value="250" min="0" max="100">
+        <span class="slider-value"></span>
       </label>
     </div>
 
 
 
+
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script>
-    let slider = $(".slider");
-    let rg= $("#range").val();
-    let vl = $("#value").val(rg);
-
-    $("#range").change( () => {
-      let rg2 = $("#range").val();
-      $("#value").val(rg2);
-    });
-    $("#value").keyup( () => {
-      let vl2 = $("#value").val();
-      $("#range").val(vl2);
-    });
+      rangeSlider();
     </script>
   </body>
 </html>
