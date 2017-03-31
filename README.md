@@ -8,6 +8,9 @@ Candy's Mario Paint is a personal project of mine, written in HTML/Canvas, JavaS
 
 The app allows you to choose an image from a preset toolbox and use it as a brush.
 
+![image of home](assets/images/home.png)
+
+
 ### Using images as brushes
 
 Painting on the canvas using images is relatively simple. The slightly complicated part was registering when the user clicks vs when the user wants to drag the brush.
@@ -39,6 +42,8 @@ imgs.forEach(function(img, idx) {
 ### Brush settings
 
 Clicking on the "Brush settings" button opens up a modal that allows you to change the size and opacity of the brush.
+
+![image of modal](assets/images/modal.png)
 
 ### Clearing the canvas
 
