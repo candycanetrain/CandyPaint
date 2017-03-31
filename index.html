@@ -12,10 +12,29 @@
   </head>
   <body>
 
-    <button class="closeup" type="button" name="button"></button>
-    <img id="toad" class="brush" draggable="true" ondragstart="drag(event)" src="./assets/images/mario-fireball.png" alt="">
+    <h1>Candy's Mario Paint</h1>
 
-    <img id="mario-fireball" draggable="true" ondragstart="drag(event)" src="./assets/images/toad.png" alt="">
+    <section id="brush-toolbox" width="300" height="300">
+
+    </section>
+    <div id="optionsModal" class="modal">
+
+      <div class="slider">
+        <label>Size
+          <input class="slider-range" id="size" type="range" value="100" min="0" max="400">
+          <span class="slider-value"></span>
+        </label>
+      </div>
+
+      <div class="slider">
+        <label>Opacity
+          <input class="slider-range" id="opacity" type="range" value="250" min="0" max="100">
+          <span class="slider-value"></span>
+        </label>
+      </div>
+    </div>
+    <button id="closeup" type="button" name="button"></button>
+
 
     <button id="clear-canvas" type="button" name="button">Clear</button>
     <button type="button" name="button">Undo</button>
@@ -26,26 +45,30 @@
     <div class="line vertical" style="top: 260px; left: 323px;"></div>
     <canvas ondrop="drop(event)" ondragover="allowDrop(even)" id="canvas" width="700" height="500" style="border:1px solid #000000">Your browser does not support the HTML5 'canvas' tag.</canvas>
 
-    <div class="slider">
-      <label>Size
-        <input class="slider-range" id="size" type="range" value="100" min="0" max="400">
-        <span class="slider-value"></span>
-      </label>
-    </div>
-
-    <div class="slider">
-      <label>Opacity
-        <input class="slider-range" id="opacity" type="range" value="250" min="0" max="100">
-        <span class="slider-value"></span>
-      </label>
-    </div>
-
 
 
 
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script>
+      let imgs = [];
+      var origImgs = [];
+
+      for(let i = 0; i < 12; i += 1) {
+        imgs.push( new Image() );
+        imgs[i].src = "./assets/images/icons/" + "icon_" + i + ".png";
+        origImgs.push( new Image() );
+        origImgs[i].src = "./assets/images/icons/" + "icon_" + i + ".png";
+      }
+
+      imgs.forEach(function(img, idx) {
+        let toolbox = document.getElementById("brush-toolbox");
+        img.setAttribute("height", "65");
+        img.setAttribute("id", "icon_"+idx);
+        toolbox.appendChild(img);
+
+      })
       rangeSlider();
+
     </script>
   </body>
 </html>
