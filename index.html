@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <img src="./assets/images/candymariologo.png" alt="">
+      <img class="logo" src="./assets/images/candymariologo.png" alt="">
 
       <section id="brush-toolbox" width="300" height="300">
 
@@ -34,16 +34,18 @@
           </div>
         </div>
       </div>
-      <button id="open" class="options" type="button" name="button">Brush Settings</button>
+      <div class="options-buttons">
+        <button id="open" class="options" type="button" name="button">Brush Settings</button>
 
-      <button id="clear-canvas" type="button" name="button">Clear</button>
-      <button type="button" name="button">Undo</button>
-      <button type="button" name="button">Redo</button>
-      <button id="save-canvas" type="button" name="button">Save</button>
-      <button id="restore-canvas" type="button" name="button">Restore</button>
+        <button id="clear-canvas" type="button" name="button">Clear</button>
+        <button type="button" name="button">Undo</button>
+        <button type="button" name="button">Redo</button>
+        <button id="save-canvas" type="button" name="button">Save</button>
+        <button id="restore-canvas" type="button" name="button">Restore</button>
+      </div>
       <div class="line horizontal" style="top: 284px;"></div>
       <div class="line vertical" style="top: 260px; left: 323px;"></div>
-      <canvas ondrop="drop(event)" ondragover="allowDrop(even)" id="canvas" width="700" height="500" style="border:1px solid #000000">Your browser does not support the HTML5 'canvas' tag.</canvas>
+      <canvas ondrop="drop(event)" ondragover="allowDrop(even)" id="canvas" width="700" height="500">Your browser does not support the HTML5 'canvas' tag.</canvas>
     </div>
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script>
