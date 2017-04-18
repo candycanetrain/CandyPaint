@@ -39,6 +39,18 @@ canvas {
   padding: 10px 20px;
 }
 
+#brush-toolbox > img:hover, img:focus{
+  color: black;
+  background-color: #00ace6;
+  cursor: pointer;
+}
+
+#brush-toolbox > img .active{
+  color: black;
+  background-color: #00ace6;
+  cursor: pointer;
+}
+
 .options-buttons {
   display: flex;
   align-items: center;
