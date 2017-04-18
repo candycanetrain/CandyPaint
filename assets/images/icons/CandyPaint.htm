@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///Users/appacademy/Desktop/CandyPaint/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./CandyPaint_files/easeljs-0.7.0.min.js"></script>
+    <script src="./CandyPaint_files/tweenjs-0.6.2.min.js"></script>
+    <script src="./CandyPaint_files/jquery.min.js"></script>
+    <link rel="stylesheet" href="./CandyPaint_files/paint.css">
+    <script src="./CandyPaint_files/jquery.js"></script>
+
+    
+    <title>CandyPaint</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img class="logo" src="./CandyPaint_files/candymariologo.png" alt="">
+
+      <section id="brush-toolbox" width="300" height="300">
+
+      <img src="./CandyPaint_files/icon_0.png" height="65" id="icon_0"><img src="./CandyPaint_files/icon_1.png" height="65" id="icon_1"><img src="./CandyPaint_files/icon_2.png" height="65" id="icon_2"><img src="./CandyPaint_files/icon_3.png" height="65" id="icon_3"><img src="./CandyPaint_files/icon_4.png" height="65" id="icon_4"><img src="./CandyPaint_files/icon_5.png" height="65" id="icon_5"><img src="./CandyPaint_files/icon_6.png" height="65" id="icon_6"><img src="./CandyPaint_files/icon_7.png" height="65" id="icon_7"><img src="./CandyPaint_files/icon_8.png" height="65" id="icon_8"><img src="./CandyPaint_files/icon_9.png" height="65" id="icon_9"><img src="./CandyPaint_files/icon_10.png" height="65" id="icon_10"><img src="./CandyPaint_files/icon_11.png" height="65" id="icon_11" class="activeIMG"><img src="./CandyPaint_files/icon_12.png" height="65" id="icon_12"><img src="./CandyPaint_files/icon_13.png" height="65" id="icon_13"><img src="./CandyPaint_files/icon_14.png" height="65" id="icon_14"><img src="./CandyPaint_files/icon_15.png" height="65" id="icon_15"><img src="./CandyPaint_files/icon_16.png" height="65" id="icon_16" class=""><img src="./CandyPaint_files/icon_17.png" height="65" id="icon_17"><img src="./CandyPaint_files/icon_18.png" height="65" id="icon_18" class=""><img src="./CandyPaint_files/icon_19.png" height="65" id="icon_19" class=""><img src="./CandyPaint_files/icon_20.png" height="65" id="icon_20" class=""><img src="./CandyPaint_files/icon_21.png" height="65" id="icon_21" class=""><img src="./CandyPaint_files/icon_22.png" height="65" id="icon_22" class=""><img src="./CandyPaint_files/icon_23.png" height="65" id="icon_23" class=""></section>
+      <div id="optionsModal" class="modal">
+        <div class="modal-content">
+          <button id="close" class="close" type="button" name="button">x</button>
+          <div class="slider">
+            <label class="slider-labels">Size</label>
+              <input class="slider-range" id="size" type="range" value="100" min="0" max="400">
+              <span class="slider-value">100</span>
+          </div>
+
+          <div class="slider">
+            <label class="slider-labels">Opacity</label>
+              <input class="slider-range" id="opacity" type="range" value="100" min="0" max="100">
+              <span class="slider-value">100</span>
+
+          </div>
+        </div>
+      </div>
+      <div class="options-buttons">
+        <button id="open" class="options" type="button" name="button">Brush Settings</button>
+
+        <button id="clear-canvas" type="button" name="button">Clear</button>
+        <button type="button" name="button">Undo</button>
+        <button type="button" name="button">Redo</button>
+        <button id="save-canvas" type="button" name="button">Save</button>
+        <button id="restore-canvas" type="button" name="button">Restore</button>
+      </div>
+      <div class="line horizontal" style="top: 284px;"></div>
+      <div class="line vertical" style="top: 260px; left: 323px;"></div>
+      <canvas ondrop="drop(event)" ondragover="allowDrop(even)" id="canvas" width="700" height="500">Your browser does not support the HTML5 'canvas' tag.</canvas>
+    </div>
+    <script type="application/javascript" src="./CandyPaint_files/bundle.js"></script>
+    <script>
+      addIcons();
+      rangeSlider();
+      modalLogic();
+
+    </script>
+  
+
+</body></html>

@@ -39,16 +39,21 @@ canvas {
   padding: 10px 20px;
 }
 
+#brush-toolbox > img{
+  margin: 2px 5px;
+}
+
 #brush-toolbox > img:hover, img:focus{
   color: black;
-  background-color: #00ace6;
+  background-color: #ffec59;
   cursor: pointer;
 }
 
 .activeIMG{
   color: black;
-  background-color: #00ace6;
+  background-color: #f5c243;
   cursor: pointer;
+  border: 1px solid gray;
 }
 
 .options-buttons {
