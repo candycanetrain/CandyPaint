@@ -1,0 +1,4 @@
+<button type="button" name="button">Undo</button>
+<button type="button" name="button">Redo</button>
+<button id="save-canvas" type="button" name="button">Save</button>
+<button id="restore-canvas" type="button" name="button">Restore</button>
