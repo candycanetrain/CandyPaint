@@ -45,7 +45,7 @@ canvas {
   cursor: pointer;
 }
 
-#brush-toolbox > img .active{
+.activeIMG{
   color: black;
   background-color: #00ace6;
   cursor: pointer;
