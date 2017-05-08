@@ -1,6 +1,6 @@
 # Production Readme
 
-[Candy's Mario Paint live](https://candycanetrain.github.io/CandyPaint/)
+[Candy's Mario Paint live](https://candycanetrain.github.io/Candys-Mario-Paint/)
 
 Candy's Mario Paint is a personal project of mine, written in HTML/Canvas, JavaScript, and CSS. It was inspired by my memory of playing the super cool Mario Paint game on Super Nintendo when I was a kid.
 
